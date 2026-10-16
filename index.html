@@ -1,197 +1,225 @@
-<!doctype html>
+<!DOCTYPE html>
+
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#ffffff">
-  <meta name="description" content="Maxim V. Polyakov is an applied mathematician at Volgograd State University. Research in mathematical modelling, computational oncology, and mechanistic and data-driven models of CAR-T cell therapy.">
-  <meta name="author" content="Maxim V. Polyakov">
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="Maxim V. Polyakov | Mathematical Modelling">
-  <meta property="og:description" content="Mathematical modelling, computational oncology and CAR-T cell therapy in solid tumours.">
-  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="assets/styles.css">
-  <title>Maxim V. Polyakov — Mathematical Modelling</title>
-</head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="#ffffff" name="theme-color"/>
+<meta content="Maxim V. Polyakov is an applied mathematician at Volgograd State University. Research in mathematical modelling, computational oncology, and mechanistic and data-driven models of CAR-T cell therapy." name="description"/>
+<meta content="Maxim V. Polyakov" name="author"/>
+<meta content="website" property="og:type"/>
+<meta content="Maxim V. Polyakov | Mathematical Modelling" property="og:title"/>
+<meta content="Mathematical modelling, computational oncology and CAR-T cell therapy in solid tumours." property="og:description"/>
+<link href="assets/favicon.svg" rel="icon" type="image/svg+xml"/>
+<link href="assets/styles.css" rel="stylesheet"/>
+<title>Maxim V. Polyakov — Mathematical Modelling</title>
+<script defer="True" src="assets/site.js"></script></head>
 <body>
 <a class="skip-link" href="#main">Skip to content</a>
+
+<div aria-hidden="true" class="ambient-cells">
+<div class="ambient-rail ambient-rail-left">
+<span class="cell c1"></span><span class="cell c2"></span><span class="cell c3"></span><span class="cell c4"></span><span class="cell c5"></span>
+</div>
+<div class="ambient-rail ambient-rail-right">
+<span class="cell c6"></span><span class="cell c7"></span><span class="cell c8"></span><span class="cell c9"></span><span class="cell c10"></span>
+</div>
+</div>
+<button aria-label="Pause decorative cell animation" aria-pressed="false" class="animation-toggle" id="animation-toggle" type="button">Pause motion</button>
 <header class="site-header" id="top">
-  <div class="container header-inner">
-    <a class="brand" href="#top">Maxim Polyakov<span class="brand-dot">.</span></a>
-    <nav class="primary-nav" aria-label="Main navigation">
-      <a href="#about">About</a>
-      <a href="#research">Research</a>
-      <a href="#publications">Publications</a>
-      <a href="#projects">Projects</a>
-      <a href="#teaching">Teaching</a>
-      <a href="#contact">Contact</a>
-    </nav>
-    <details class="mobile-navigation">
-      <summary aria-label="Open navigation">Menu <span class="chevron" aria-hidden="true"></span></summary>
-      <nav aria-label="Mobile navigation">
-        <a href="#about">About</a>
-        <a href="#research">Research</a>
-        <a href="#publications">Publications</a>
-        <a href="#projects">Projects</a>
-        <a href="#teaching">Teaching</a>
-        <a href="#contact">Contact</a>
-      </nav>
-    </details>
-  </div>
+<div class="container header-inner">
+<a class="brand" href="#top">Maxim Polyakov<span class="brand-dot">.</span></a>
+<nav aria-label="Main navigation" class="primary-nav">
+<a href="#about">About</a>
+<a href="#research">Research</a>
+<a href="#publications">Publications</a>
+<a href="#projects">Projects</a>
+<a href="#teaching">Teaching</a>
+<a href="#students">Students</a><a href="#media">Media</a><a href="#contact">Contact</a>
+</nav>
+<details class="mobile-navigation">
+<summary aria-label="Open navigation">Menu <span aria-hidden="true" class="chevron"></span></summary>
+<nav aria-label="Mobile navigation">
+<a href="#about">About</a>
+<a href="#research">Research</a>
+<a href="#publications">Publications</a>
+<a href="#projects">Projects</a>
+<a href="#teaching">Teaching</a>
+<a href="#students">Students</a><a href="#media">Media</a><a href="#contact">Contact</a>
+</nav>
+</details>
+</div>
 </header>
-
 <main id="main">
-  <section class="intro container" aria-labelledby="name-heading">
-    <div class="intro-main">
-      <p class="eyebrow">Mathematical modelling · Computational oncology</p>
-      <h1 id="name-heading">Maxim V. Polyakov</h1>
-      <p class="academic-title">Associate Professor · Senior Research Fellow</p>
-      <p class="institution">Department of Information Systems and Computer Modelling<br>
-      <a href="https://www.volsu.ru/" target="_blank" rel="noopener noreferrer">Volgograd State University</a></p>
-      <p class="lead">I develop mathematical and computational models to understand complex biological systems, with a particular focus on CAR-T cell therapy in solid tumours.</p>
-      <p class="intro-secondary">My work brings together mechanistic models, numerical methods and data-driven approaches to study tumour dynamics, treatment resistance and the conditions that shape therapeutic response.</p>
-      <div class="intro-links" aria-label="Academic profiles">
-        <a href="cv/Maxim-Polyakov-CV.pdf" target="_blank" rel="noopener noreferrer">Curriculum vitae <span aria-hidden="true">↗</span></a>
-        <a href="https://scholar.google.com/citations?user=925AeRAAAAAJ" target="_blank" rel="noopener noreferrer">Google Scholar <span aria-hidden="true">↗</span></a>
-        <a href="https://orcid.org/0000-0002-7047-6202" target="_blank" rel="noopener noreferrer">ORCID <span aria-hidden="true">↗</span></a>
-        <a href="https://github.com/maximvpolyakov" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
-      </div>
-    </div>
-    <aside class="intro-aside" aria-label="Research profile">
-      <div class="monogram" aria-hidden="true">MP</div>
-      <p class="aside-small">Research areas</p>
-      <p>Mathematical modelling<br>Computational oncology<br>Mathematical biology<br>Numerical simulation</p>
-    </aside>
-  </section>
+<section aria-labelledby="name-heading" class="intro container">
+<div class="intro-main">
+<p class="eyebrow">Mathematical modelling · Computational oncology</p>
+<h1 id="name-heading">Maxim V. Polyakov</h1>
+<p class="academic-title">Associate Professor · Senior Research Fellow</p>
+<p class="institution">Department of Information Systems and Computer Modelling<br/>
+<a href="https://www.volsu.ru/" rel="noopener noreferrer" target="_blank">Volgograd State University</a></p>
+<p class="lead">I develop mathematical and computational models to understand complex biological systems, with a particular focus on CAR-T cell therapy in solid tumours.</p>
+<p class="intro-secondary">My work brings together mechanistic models, numerical methods and data-driven approaches to study tumour dynamics, treatment resistance and the conditions that shape therapeutic response.</p>
+<div aria-label="Academic profiles" class="intro-links">
+<a href="cv/Maxim-Polyakov-CV.pdf" rel="noopener noreferrer" target="_blank">Curriculum vitae <span aria-hidden="true">↗</span></a>
+<a href="https://scholar.google.com/citations?user=925AeRAAAAAJ" rel="noopener noreferrer" target="_blank">Google Scholar <span aria-hidden="true">↗</span></a>
+<a href="https://orcid.org/0000-0002-7047-6202" rel="noopener noreferrer" target="_blank">ORCID <span aria-hidden="true">↗</span></a>
+<a href="https://github.com/maximvpolyakov" rel="noopener noreferrer" target="_blank">GitHub <span aria-hidden="true">↗</span></a>
+</div>
+</div>
+<aside aria-label="Research profile" class="intro-aside">
+<div aria-hidden="true" class="monogram">MP</div>
+<p class="aside-small">Research areas</p>
+<p>Mathematical modelling<br/>Computational oncology<br/>Mathematical biology<br/>Numerical simulation</p>
+</aside>
+</section>
+<div class="container"><div class="page-rule"></div></div>
+<section aria-labelledby="about-heading" class="section container" id="about">
+<div class="section-side"><p class="section-number">Profile</p></div>
+<div class="section-body">
+<h2 id="about-heading">About</h2>
+<p>I am an Associate Professor and Senior Research Fellow at Volgograd State University. My research is centred on <strong>mathematical modelling and numerical simulation</strong>, especially their applications to biological systems and problems in oncology.</p>
+<p>My current research investigates the spatiotemporal dynamics of solid tumours during CAR-T cell therapy. I am interested in how antigen escape, immune-cell infiltration, exhaustion and the tumour microenvironment influence the outcome of treatment, and how mechanistic models can be combined with machine learning to make their parameters more interpretable.</p>
+<p>I received my Candidate of Technical Sciences degree (PhD equivalent) in 2023, specialising in mathematical modelling, numerical methods and software systems. My earlier research focused on thermal processes in biological tissues and computational approaches to medical diagnostics.</p>
+<div aria-label="Research interests" class="keywords"><span>Partial differential equations</span><span>Computational oncology</span><span>Mathematical biology</span><span>Machine learning</span><span>Numerical methods</span></div>
+</div>
+</section>
+<section aria-labelledby="research-heading" class="section container" id="research">
+<div class="section-side"><p class="section-number">Focus</p></div>
+<div class="section-body">
+<h2 id="research-heading">Research</h2>
+<p class="section-intro">I study how mathematical models can explain the behaviour of complex biological systems and help distinguish the mechanisms behind different outcomes.</p>
+<div class="topic-list">
+<article class="topic">
+<h3>CAR-T cell therapy in solid tumours</h3>
+<p>Mechanistic models of tumour–immune interactions, spatial heterogeneity, antigen escape and immunosuppression. A central question is how these mechanisms give rise to distinct therapeutic response regimes.</p>
+<p class="topic-methods">Reaction–diffusion models · Chemotaxis · Spatiotemporal simulation</p>
+</article>
+<article class="topic">
+<h3>Mechanistic and data-driven modelling</h3>
+<p>Combining differential-equation models with machine learning, parameter inference and numerical analysis to investigate latent biological mechanisms and improve interpretability under data constraints.</p>
+<p class="topic-methods">Hybrid ML · Parameter inference · Computational methods</p>
+</article>
+<article class="topic">
+<h3>Mathematical modelling in medicine</h3>
+<p>Computational studies of heat transfer, temperature and radiation fields in biological tissues, and their applications to microwave radiometry and computer-assisted medical diagnostics.</p>
+<p class="topic-methods">Bioheat transfer · Inverse problems · Numerical simulation</p>
+</article>
+</div>
+</div>
+</section>
+<section aria-labelledby="pub-heading" class="section container" id="publications">
+<div class="section-side"><p class="section-number">Scholarship</p></div>
+<div class="section-body">
+<h2 id="pub-heading">Selected publications</h2>
+<p class="section-intro">A selection of peer-reviewed journal articles. For the broader publication record, see my <a href="cv/Maxim-Polyakov-CV.pdf" rel="noopener noreferrer" target="_blank">curriculum vitae</a> or <a href="https://scholar.google.com/citations?user=925AeRAAAAAJ" rel="noopener noreferrer" target="_blank">Google Scholar</a>.</p>
+<div class="publication-list">
+<article class="publication">
+<time datetime="2026">2026</time><div class="publication-figure"><img alt="Abstract mathematical modelling diagram; replace with a research figure" height="80" loading="lazy" src="assets/publications/car-t-latent-parameters.svg" width="112"/></div>
+<div class="publication-description"><h3><a href="https://doi.org/10.3390/technologies14050276" rel="noopener noreferrer" target="_blank">A Hybrid Machine Learning Framework for Mechanistically Interpretable Latent Parameter Inference in a Spatiotemporal CAR-T Therapy Model for Solid Tumours</a></h3><p>Polyakov M. <em>Technologies</em>, 14, 276. <a class="doi" href="https://doi.org/10.3390/technologies14050276" rel="noopener noreferrer" target="_blank">DOI ↗</a></p></div>
+</article>
+<article class="publication">
+<time datetime="2026">2026</time><div class="publication-figure"><img alt="Schematic spatial tumour heterogeneity; replace with a published figure" height="80" loading="lazy" src="assets/publications/car-t-spatial-model.svg" width="112"/></div>
+<div class="publication-description"><h3><a href="https://doi.org/10.3390/computation14040087" rel="noopener noreferrer" target="_blank">Spatiotemporal Modelling of CAR-T Cell Therapy in Solid Tumours: Mechanisms of Antigen Escape and Immunosuppression</a></h3><p>Polyakov M. <em>Computation</em>, 14, 87. <a class="doi" href="https://doi.org/10.3390/computation14040087" rel="noopener noreferrer" target="_blank">DOI ↗</a></p></div>
+</article>
+<article class="publication">
+<time datetime="2026">2026</time><div class="publication-figure"><img alt="Conceptual antigen-positive and antigen-negative tumour pattern; replace with a published figure" height="80" loading="lazy" src="assets/publications/car-t-antigen-escape.svg" width="112"/></div>
+<div class="publication-description"><h3><a href="https://doi.org/10.3390/computation14010003" rel="noopener noreferrer" target="_blank">Reaction-Diffusion Model of CAR-T Cell Therapy in Solid Tumours with Antigen Escape</a></h3><p>Polyakov M. V., Tuchina E. I. <em>Computation</em>, 14, 3. <a class="doi" href="https://doi.org/10.3390/computation14010003" rel="noopener noreferrer" target="_blank">DOI ↗</a></p></div>
+</article>
+<article class="publication">
+<time datetime="2025">2025</time><div class="publication-figure"><img alt="Conceptual thermometry pattern; replace with a published figure" height="80" loading="lazy" src="assets/publications/microwave-phantom.svg" width="112"/></div>
+<div class="publication-description"><h3><a href="https://doi.org/10.3390/technologies13030106" rel="noopener noreferrer" target="_blank">A Realistic Breast Phantom for Investigating the Features of the Microwave Radiometry Method Using Mathematical and Physical Modelling</a></h3><p>Polyakov M. V., Sirotin D. S. <em>Technologies</em>, 13, 106. <a class="doi" href="https://doi.org/10.3390/technologies13030106" rel="noopener noreferrer" target="_blank">DOI ↗</a></p></div>
+</article>
+<article class="publication">
+<time datetime="2024">2024</time><div class="publication-figure"><img alt="Conceptual heterogeneous field; replace with a published figure" height="80" loading="lazy" src="assets/publications/heterogeneous-tumour.svg" width="112"/></div>
+<div class="publication-description"><h3><a href="https://doi.org/10.1142/S0129183124500104" rel="noopener noreferrer" target="_blank">Simulation Tumor Growth in Heterogeneous Medium Based on Diffusion Equation</a></h3><p>Polyakov M. V., Ten V. V. <em>International Journal of Modern Physics C</em>, 35(1), 2450010. <a class="doi" href="https://doi.org/10.1142/S0129183124500104" rel="noopener noreferrer" target="_blank">DOI ↗</a></p></div>
+</article>
+<article class="publication">
+<time datetime="2022">2022</time><div class="publication-figure"><img alt="Conceptual simulation and machine learning diagram; replace with a published figure" height="80" loading="lazy" src="assets/publications/simulation-ai-diagnostics.svg" width="112"/></div>
+<div class="publication-description"><h3><a href="https://doi.org/10.3390/a15080292" rel="noopener noreferrer" target="_blank">Improving the Efficiency of Oncological Diagnosis of the Breast Based on the Combined Use of Simulation Modeling and Artificial Intelligence Algorithms</a></h3><p>Khoperskov A. V., Polyakov M. V. <em>Algorithms</em>, 15, 292. <a class="doi" href="https://doi.org/10.3390/a15080292" rel="noopener noreferrer" target="_blank">DOI ↗</a></p></div>
+</article>
+</div>
+<p class="after-list"><a class="text-arrow" href="cv/Maxim-Polyakov-CV.pdf" rel="noopener noreferrer" target="_blank">Full publication list in CV <span aria-hidden="true">↗</span></a></p>
+</div>
+</section>
+<section aria-labelledby="projects-heading" class="section container" id="projects">
+<div class="section-side"><p class="section-number">Work</p></div>
+<div class="section-body">
+<h2 id="projects-heading">Projects &amp; software</h2>
+<h3 class="subsection-title">Selected research projects</h3>
+<div class="simple-list">
+<article class="simple-item">
+<div class="item-meta">2025–2027 · Principal Investigator</div>
+<h4>Mathematical Modelling of the Spatiotemporal Dynamics of Solid Tumours under CAR T Cell Therapy</h4>
+<p><span aria-label="RSF funding organisation" class="fund-mark">RSF</span>Russian Science Foundation (RSF), grant 25-71-00041.</p>
+</article>
+<article class="simple-item">
+<div class="item-meta">2026–present · Research Team Member</div>
+<h4>Development of Methods for Modelling Complex Systems through the Integration of Direct Computational Experiments and Data Mining</h4>
+<p>State Assignment of the Ministry of Science and Higher Education, FZUU-2026-0005.</p>
+</article>
+<article class="simple-item">
+<div class="item-meta">2019–2021 · Principal Investigator</div>
+<h4>Development of a Mathematical Modelling Method for Thermal Processes in the Breast for Diagnostic Applications</h4>
+<p><span aria-label="RFBR funding organisation" class="fund-mark">RFBR</span>Russian Foundation for Basic Research (RFBR), grant 19-47-343008.</p>
+</article>
+</div>
+<h3 class="subsection-title software-heading">Research software</h3>
+<div class="software-block">
+<h4><a href="https://github.com/maximvpolyakov/CAR-T-model" rel="noopener noreferrer" target="_blank">CAR-T tumour simulation <span aria-hidden="true">↗</span></a></h4>
+<p>An open-source numerical implementation of a three-dimensional reaction–diffusion–chemotaxis model describing functional and exhausted CAR-T cells, tumour subpopulations and features of the tumour microenvironment.</p>
+<p class="item-meta">C++ · PDE simulation · GitHub repository</p>
+</div>
+</div>
+</section>
+<section aria-labelledby="teaching-heading" class="section container" id="teaching">
+<div class="section-side"><p class="section-number">Academic life</p></div>
+<div class="section-body">
+<h2 id="teaching-heading">Teaching &amp; service</h2>
+<p>At Volgograd State University, I teach and supervise work in mathematical and computational modelling, algorithms and computational methods.</p>
+<h3 class="subsection-title">Courses taught</h3>
+<ul class="course-list"><li>Fundamentals of Modelling</li><li>Methods of Mathematical Modelling</li><li>Data Structures and Algorithms</li></ul>
+<h3 class="subsection-title">Academic service</h3>
+<p>I have served as a peer reviewer for journals including <em>Computer Methods and Programs in Biomedicine</em>, <em>International Journal of Molecular Sciences</em>, <em>International Journal of Thermal Sciences</em>, <em>Algorithms</em> and <em>Sensors</em>.</p>
+<h3 class="subsection-title">Education</h3>
+<div class="education-list"><div><span>2023</span><p>Candidate of Technical Sciences (PhD equivalent), Volgograd State University</p></div><div><span>2017</span><p>Master’s degree in Software Engineering</p></div><div><span>2015</span><p>Bachelor’s degree in Software Engineering</p></div></div>
+</div>
+</section>
 
-  <div class="container"><div class="page-rule"></div></div>
-
-  <section class="section container" id="about" aria-labelledby="about-heading">
-    <div class="section-side"><p class="section-number">01 / Profile</p></div>
-    <div class="section-body">
-      <h2 id="about-heading">About</h2>
-      <p>I am an Associate Professor and Senior Research Fellow at Volgograd State University. My research is centred on <strong>mathematical modelling and numerical simulation</strong>, especially their applications to biological systems and problems in oncology.</p>
-      <p>My current research investigates the spatiotemporal dynamics of solid tumours during CAR-T cell therapy. I am interested in how antigen escape, immune-cell infiltration, exhaustion and the tumour microenvironment influence the outcome of treatment, and how mechanistic models can be combined with machine learning to make their parameters more interpretable.</p>
-      <p>I received my Candidate of Technical Sciences degree (PhD equivalent) in 2023, specialising in mathematical modelling, numerical methods and software systems. My earlier research focused on thermal processes in biological tissues and computational approaches to medical diagnostics.</p>
-      <div class="keywords" aria-label="Research interests"><span>Partial differential equations</span><span>Computational oncology</span><span>Mathematical biology</span><span>Machine learning</span><span>Numerical methods</span></div>
-    </div>
-  </section>
-
-  <section class="section container" id="research" aria-labelledby="research-heading">
-    <div class="section-side"><p class="section-number">02 / Focus</p></div>
-    <div class="section-body">
-      <h2 id="research-heading">Research</h2>
-      <p class="section-intro">I study how mathematical models can explain the behaviour of complex biological systems and help distinguish the mechanisms behind different outcomes.</p>
-      <div class="topic-list">
-        <article class="topic">
-          <h3>CAR-T cell therapy in solid tumours</h3>
-          <p>Mechanistic models of tumour–immune interactions, spatial heterogeneity, antigen escape and immunosuppression. A central question is how these mechanisms give rise to distinct therapeutic response regimes.</p>
-          <p class="topic-methods">Reaction–diffusion models · Chemotaxis · Spatiotemporal simulation</p>
-        </article>
-        <article class="topic">
-          <h3>Mechanistic and data-driven modelling</h3>
-          <p>Combining differential-equation models with machine learning, parameter inference and numerical analysis to investigate latent biological mechanisms and improve interpretability under data constraints.</p>
-          <p class="topic-methods">Hybrid ML · Parameter inference · Computational methods</p>
-        </article>
-        <article class="topic">
-          <h3>Mathematical modelling in medicine</h3>
-          <p>Computational studies of heat transfer, temperature and radiation fields in biological tissues, and their applications to microwave radiometry and computer-assisted medical diagnostics.</p>
-          <p class="topic-methods">Bioheat transfer · Inverse problems · Numerical simulation</p>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <section class="section container" id="publications" aria-labelledby="pub-heading">
-    <div class="section-side"><p class="section-number">03 / Scholarship</p></div>
-    <div class="section-body">
-      <h2 id="pub-heading">Selected publications</h2>
-      <p class="section-intro">A selection of peer-reviewed journal articles. For the broader publication record, see my <a href="cv/Maxim-Polyakov-CV.pdf" target="_blank" rel="noopener noreferrer">curriculum vitae</a> or <a href="https://scholar.google.com/citations?user=925AeRAAAAAJ" target="_blank" rel="noopener noreferrer">Google Scholar</a>.</p>
-      <div class="publication-list">
-        <article class="publication">
-          <time datetime="2026">2026</time>
-          <div><h3><a href="https://doi.org/10.3390/technologies14050276" target="_blank" rel="noopener noreferrer">A Hybrid Machine Learning Framework for Mechanistically Interpretable Latent Parameter Inference in a Spatiotemporal CAR-T Therapy Model for Solid Tumours</a></h3><p>Polyakov M. <em>Technologies</em>, 14, 276. <a class="doi" href="https://doi.org/10.3390/technologies14050276" target="_blank" rel="noopener noreferrer">DOI ↗</a></p></div>
-        </article>
-        <article class="publication">
-          <time datetime="2026">2026</time>
-          <div><h3><a href="https://doi.org/10.3390/computation14040087" target="_blank" rel="noopener noreferrer">Spatiotemporal Modelling of CAR-T Cell Therapy in Solid Tumours: Mechanisms of Antigen Escape and Immunosuppression</a></h3><p>Polyakov M. <em>Computation</em>, 14, 87. <a class="doi" href="https://doi.org/10.3390/computation14040087" target="_blank" rel="noopener noreferrer">DOI ↗</a></p></div>
-        </article>
-        <article class="publication">
-          <time datetime="2026">2026</time>
-          <div><h3><a href="https://doi.org/10.3390/computation14010003" target="_blank" rel="noopener noreferrer">Reaction-Diffusion Model of CAR-T Cell Therapy in Solid Tumours with Antigen Escape</a></h3><p>Polyakov M. V., Tuchina E. I. <em>Computation</em>, 14, 3. <a class="doi" href="https://doi.org/10.3390/computation14010003" target="_blank" rel="noopener noreferrer">DOI ↗</a></p></div>
-        </article>
-        <article class="publication">
-          <time datetime="2025">2025</time>
-          <div><h3><a href="https://doi.org/10.3390/technologies13030106" target="_blank" rel="noopener noreferrer">A Realistic Breast Phantom for Investigating the Features of the Microwave Radiometry Method Using Mathematical and Physical Modelling</a></h3><p>Polyakov M. V., Sirotin D. S. <em>Technologies</em>, 13, 106. <a class="doi" href="https://doi.org/10.3390/technologies13030106" target="_blank" rel="noopener noreferrer">DOI ↗</a></p></div>
-        </article>
-        <article class="publication">
-          <time datetime="2024">2024</time>
-          <div><h3><a href="https://doi.org/10.1142/S0129183124500104" target="_blank" rel="noopener noreferrer">Simulation Tumor Growth in Heterogeneous Medium Based on Diffusion Equation</a></h3><p>Polyakov M. V., Ten V. V. <em>International Journal of Modern Physics C</em>, 35(1), 2450010. <a class="doi" href="https://doi.org/10.1142/S0129183124500104" target="_blank" rel="noopener noreferrer">DOI ↗</a></p></div>
-        </article>
-        <article class="publication">
-          <time datetime="2022">2022</time>
-          <div><h3><a href="https://doi.org/10.3390/a15080292" target="_blank" rel="noopener noreferrer">Improving the Efficiency of Oncological Diagnosis of the Breast Based on the Combined Use of Simulation Modeling and Artificial Intelligence Algorithms</a></h3><p>Khoperskov A. V., Polyakov M. V. <em>Algorithms</em>, 15, 292. <a class="doi" href="https://doi.org/10.3390/a15080292" target="_blank" rel="noopener noreferrer">DOI ↗</a></p></div>
-        </article>
-      </div>
-      <p class="after-list"><a class="text-arrow" href="cv/Maxim-Polyakov-CV.pdf" target="_blank" rel="noopener noreferrer">Full publication list in CV <span aria-hidden="true">↗</span></a></p>
-    </div>
-  </section>
-
-  <section class="section container" id="projects" aria-labelledby="projects-heading">
-    <div class="section-side"><p class="section-number">04 / Work</p></div>
-    <div class="section-body">
-      <h2 id="projects-heading">Projects &amp; software</h2>
-      <h3 class="subsection-title">Selected research projects</h3>
-      <div class="simple-list">
-        <article class="simple-item">
-          <div class="item-meta">2025–2027 · Principal Investigator</div>
-          <h4>Mathematical Modelling of the Spatiotemporal Dynamics of Solid Tumours under CAR T Cell Therapy</h4>
-          <p>Russian Science Foundation (RSF), grant 25-71-00041.</p>
-        </article>
-        <article class="simple-item">
-          <div class="item-meta">2026–present · Research Team Member</div>
-          <h4>Development of Methods for Modelling Complex Systems through the Integration of Direct Computational Experiments and Data Mining</h4>
-          <p>State Assignment of the Ministry of Science and Higher Education, FZUU-2026-0005.</p>
-        </article>
-        <article class="simple-item">
-          <div class="item-meta">2019–2021 · Principal Investigator</div>
-          <h4>Development of a Mathematical Modelling Method for Thermal Processes in the Breast for Diagnostic Applications</h4>
-          <p>Russian Foundation for Basic Research (RFBR), grant 19-47-343008.</p>
-        </article>
-      </div>
-      <h3 class="subsection-title software-heading">Research software</h3>
-      <div class="software-block">
-        <h4><a href="https://github.com/maximvpolyakov/CAR-T-model" target="_blank" rel="noopener noreferrer">CAR-T tumour simulation <span aria-hidden="true">↗</span></a></h4>
-        <p>An open-source numerical implementation of a three-dimensional reaction–diffusion–chemotaxis model describing functional and exhausted CAR-T cells, tumour subpopulations and features of the tumour microenvironment.</p>
-        <p class="item-meta">C++ · PDE simulation · GitHub repository</p>
-      </div>
-    </div>
-  </section>
-
-  <section class="section container" id="teaching" aria-labelledby="teaching-heading">
-    <div class="section-side"><p class="section-number">05 / Academic life</p></div>
-    <div class="section-body">
-      <h2 id="teaching-heading">Teaching &amp; service</h2>
-      <p>At Volgograd State University, I teach and supervise work in mathematical and computational modelling, algorithms and computational methods.</p>
-      <h3 class="subsection-title">Courses taught</h3>
-      <ul class="course-list"><li>Fundamentals of Modelling</li><li>Methods of Mathematical Modelling</li><li>Data Structures and Algorithms</li></ul>
-      <h3 class="subsection-title">Academic service</h3>
-      <p>I have served as a peer reviewer for journals including <em>Computer Methods and Programs in Biomedicine</em>, <em>International Journal of Molecular Sciences</em>, <em>International Journal of Thermal Sciences</em>, <em>Algorithms</em> and <em>Sensors</em>.</p>
-      <h3 class="subsection-title">Education</h3>
-      <div class="education-list"><div><span>2023</span><p>Candidate of Technical Sciences (PhD equivalent), Volgograd State University</p></div><div><span>2017</span><p>Master’s degree in Software Engineering</p></div><div><span>2015</span><p>Bachelor’s degree in Software Engineering</p></div></div>
-    </div>
-  </section>
-
-  <section class="section container contact-section" id="contact" aria-labelledby="contact-heading">
-    <div class="section-side"><p class="section-number">06 / Connect</p></div>
-    <div class="section-body">
-      <h2 id="contact-heading">Contact</h2>
-      <p>I welcome research discussions and enquiries related to mathematical modelling, computational oncology and possible scientific collaborations.</p>
-      <a class="email-link" href="mailto:m.v.polyakov@volsu.ru">m.v.polyakov@volsu.ru <span aria-hidden="true">↗</span></a>
-      <p class="contact-affiliation">Department of Information Systems and Computer Modelling<br>Volgograd State University · Volgograd, Russia</p>
-      <div class="footer-profiles"><a href="https://orcid.org/0000-0002-7047-6202" target="_blank" rel="noopener noreferrer">ORCID</a><a href="https://scholar.google.com/citations?user=925AeRAAAAAJ" target="_blank" rel="noopener noreferrer">Google Scholar</a><a href="https://www.scopus.com/authid/detail.uri?authorId=57196275466" target="_blank" rel="noopener noreferrer">Scopus</a><a href="https://github.com/maximvpolyakov" target="_blank" rel="noopener noreferrer">GitHub</a><a href="cv/Maxim-Polyakov-CV.pdf" target="_blank" rel="noopener noreferrer">Full CV (PDF)</a></div>
-    </div>
-  </section>
+<section aria-labelledby="students-heading" class="section container" id="students">
+<div class="section-side"><p class="section-number">Mentorship</p></div>
+<div class="section-body">
+<h2 id="students-heading">My PhD &amp; Master's students</h2>
+<p class="section-intro">Students and early-career researchers I supervise.</p>
+<div class="students-grid">
+<article class="student-card"><img alt="Placeholder with the initials DS for Danila Sirotin" height="82" loading="lazy" src="assets/students/danila-sirotin.png" width="82"/><h3>Danila Sirotin</h3></article>
+<article class="student-card"><img alt="Placeholder with the initials ET for Elena Tuchina" height="82" loading="lazy" src="assets/students/elena-tuchina.png" width="82"/><h3>Elena Tuchina</h3></article>
+<article class="student-card"><img alt="Placeholder with the initials YC for Yulia Chernikova" height="82" loading="lazy" src="assets/students/yulia-chernikova.png" width="82"/><h3>Yulia Chernikova</h3></article>
+</div>
+</div>
+</section>
+<section aria-labelledby="media-heading" class="section container" id="media">
+<div class="section-side"><p class="section-number">Outreach</p></div>
+<div class="section-body">
+<h2 id="media-heading">Media</h2>
+<p class="section-intro">Selected video appearances and media coverage of my research.</p>
+<div class="media-grid">
+<article class="media-card"><a aria-label="Open YouTube video one in a new tab" href="https://www.youtube.com/watch?v=cLXsK4GyGBI" rel="noopener noreferrer" target="_blank"><div class="media-thumb media-video"><img alt="Video placeholder with a play icon" height="180" loading="lazy" src="assets/media/video-one.svg" width="320"/><span aria-hidden="true" class="media-play">▶</span></div><div class="media-card-meta">YouTube · Video</div><h3>Video appearance</h3><span class="media-link">Watch on YouTube ↗</span></a></article>
+<article class="media-card"><a aria-label="Open YouTube video two in a new tab" href="https://www.youtube.com/watch?v=unDB5Z3M74Y" rel="noopener noreferrer" target="_blank"><div class="media-thumb media-video"><img alt="Video placeholder with a play icon" height="180" loading="lazy" src="assets/media/video-two.svg" width="320"/><span aria-hidden="true" class="media-play">▶</span></div><div class="media-card-meta">YouTube · Video</div><h3>Video appearance</h3><span class="media-link">Watch on YouTube ↗</span></a></article>
+<article class="media-card"><a aria-label="Read TASS report in a new tab" href="https://tass.ru/obschestvo/26303697" rel="noopener noreferrer" target="_blank"><div class="media-thumb"><img alt="Graphic labelled TASS" height="180" loading="lazy" src="assets/media/tass.svg" width="320"/></div><div class="media-card-meta">TASS · News</div><h3>VolSU is developing software to predict tumour progression</h3><span class="media-link">Read article ↗</span></a></article>
+<article class="media-card"><a aria-label="Open Dzen article in a new tab" href="https://dzen.ru/a/Z44PKXri-CvR1d9w" rel="noopener noreferrer" target="_blank"><div class="media-thumb"><img alt="Graphic labelled Dzen" height="180" loading="lazy" src="assets/media/dzen.svg" width="320"/></div><div class="media-card-meta">Dzen · Article</div><h3>Media publication</h3><span class="media-link">Read article ↗</span></a></article>
+</div>
+</div>
+</section><section aria-labelledby="contact-heading" class="section container contact-section" id="contact">
+<div class="section-side"><p class="section-number">Connect</p></div>
+<div class="section-body">
+<h2 id="contact-heading">Contact</h2>
+<p>I welcome research discussions and enquiries related to mathematical modelling, computational oncology and possible scientific collaborations.</p>
+<a class="email-link" href="mailto:m.v.polyakov@volsu.ru">m.v.polyakov@volsu.ru <span aria-hidden="true">↗</span></a>
+<p class="contact-affiliation">Department of Information Systems and Computer Modelling<br/>Volgograd State University · Volgograd, Russia</p>
+<div class="footer-profiles"><a href="https://orcid.org/0000-0002-7047-6202" rel="noopener noreferrer" target="_blank">ORCID</a><a href="https://scholar.google.com/citations?user=925AeRAAAAAJ" rel="noopener noreferrer" target="_blank">Google Scholar</a><a href="https://www.scopus.com/authid/detail.uri?authorId=57196275466" rel="noopener noreferrer" target="_blank">Scopus</a><a href="https://github.com/maximvpolyakov" rel="noopener noreferrer" target="_blank">GitHub</a><a href="cv/Maxim-Polyakov-CV.pdf" rel="noopener noreferrer" target="_blank">Full CV (PDF)</a></div>
+</div>
+</section>
 </main>
 <footer class="site-footer"><div class="container footer-inner"><span>© 2026 Maxim V. Polyakov</span><a href="#top">Back to top ↑</a></div></footer>
 </body>
