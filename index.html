@@ -80,6 +80,28 @@
 @media (prefers-reduced-motion: reduce) {
   .student-tooltip { transition: none; }
 }
+
+/* Personal portrait. The MP browser tab icon remains assets/favicon.svg. */
+.profile-photo {
+  display: block;
+  width: 180px;
+  max-width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  object-position: center 38%;
+  background: #edf3f7;
+  border: 1px solid #e2e7eb;
+  border-radius: 4px;
+  margin: 0 0 23px;
+}
+/* The original stylesheet hides the right-hand profile area on narrow screens.
+   Keep the portrait visible there, without making the text column cramped. */
+@media (max-width: 750px) {
+  .intro-aside { display: block; padding-top: 24px; }
+  .intro-aside .aside-small, .intro-aside > p:last-child { display: none; }
+  .profile-photo { width: 150px; margin-bottom: 0; }
+}
 </style>
 </head>
 <body>
@@ -137,7 +159,7 @@
 </div>
 </div>
 <aside aria-label="Research profile" class="intro-aside">
-<div aria-hidden="true" class="monogram">MP</div>
+<img class="profile-photo" src="assets/profile.jpg" alt="Maxim V. Polyakov standing in front of a whiteboard with mathematical equations" width="180" height="225" decoding="async" fetchpriority="high"/>
 <p class="aside-small">Research areas</p>
 <p>Mathematical modelling<br/>Computational oncology<br/>Mathematical biology<br/>Numerical simulation</p>
 </aside>
